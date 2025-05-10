@@ -1,71 +1,45 @@
-import React from 'react';
-import cover from '../assets/Logo/cover-1.jpg';
-import { CiPhone } from 'react-icons/ci';
-import { Link } from 'react-router-dom';
+import React from "react";
+import cover from "../assets/Logo/cover-1.jpg";
+import { FaClinicMedical, FaWhatsapp } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen w-full flex flex-col md:flex-row">
-
-      <div className="w-[100%] md:w-[30%] min-h-[30vh] md:min-h-full bg-gradient-to-r from-gray-100 to-blue-200 text-gray-900 flex flex-col justify-center 
-        items-center gap-3
-         p-10 md:p-6 animate-fade-in">
-        
-        <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold mb-6 w-[100%] text-center ">
-            برج طبى ادارى متكامل
-        
+    <div className="relative h-screen w-full overflow-hidden">
+      <img
+        src={cover}
+        alt="Medical facility background"
+        className="absolute h-full w-full object-cover object-center"
+      />
+      
+      <div className="inset-0 bg-black opacity-30 absolute"></div>
+      
+      <div className="relative z-10 h-full flex flex-col items-center justify-center mx-auto p-4 text-center text-white font-bold">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4 leading-tight">
+          Notion Medical Tower
         </h1>
         
-        <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-lg font-normal">
-          الرعاية الصحية المتكاملة بأعلى المعايير العالمية في برج مصمم خصيصًا لك ولمرضاك.
+        <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed max-w-2xl">
+          Your premier destination for comprehensive healthcare services with cutting-edge technology and compassionate care.
         </p>
-
-
-        <div className="flex  gap-4 mb-10 w-full justify-center ">
-         <Link to={'/clincs'}>
-          <button
-            aria-label="عرض قائمة العيادات"
-            className="
-            bg-teal-500 text-white hover:bg-teal-600 px-5 py-3 rounded-lg font-semibold transition-all shadow-md hover:scale-105"
+        
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link 
+            to="/clinics" 
+            className="px-8 py-3 bg-white text-blue-900 hover:bg-blue-100 rounded-lg font-bold flex items-center justify-center gap-2 transition duration-300 shadow-lg hover:shadow-xl"
           >
-            عرض العيادات
-          </button>
-        </Link>
-          <button
-            aria-label="تواصل مع فريقنا"
-            className="border border-teal-500 text-teal-500 hover:bg-teal-500/10 px-5 py-3 rounded-lg font-semibold transition-all"
-          >
-            تواصل معنا
-          </button>
-        </div>
-
-        <div className="flex flex-col gap-3 text-gray-700 text-base">
+            <FaClinicMedical /> Our Clinics
+          </Link>
           <a
-            href="tel:01060327272"
-            className="flex items-center gap-2 hover:text-teal-500 relative group transition-colors"
+            href="https://wa.me/01151133402" 
+            className="px-8 py-3 bg-transparent border-2 border-white hover:bg-green-500 hover:border-green-500 hover:text-white rounded-lg font-bold flex items-center justify-center gap-2 transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            01060327272 <CiPhone className="w-5 h-5" /> 
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
-          </a>
-          <a
-            href="tel:01060339922"
-            className="flex items-center gap-2 hover:text-teal-500 relative group transition-colors"
-          >
-           01060339922 <CiPhone className="w-5 h-5" /> 
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
+            <FaWhatsapp /> 01151133402
           </a>
         </div>
       </div>
-      
-      <div className="relative w-full md:w-[70%] min-h-[50vh] md:min-h-full overflow-hidden">
-        <div className="absolute  bg-gradient-to-l from-gray-900/10 to-transparent z-10 backdrop-blur-sm " />
-        <img
-          src={cover}
-          alt="Notion Medical Tower"
-          className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-        />
-      </div>
-      
     </div>
   );
 };

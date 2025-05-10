@@ -10,34 +10,43 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-50 shadow-md flex items-center justify-between px-6 py-3 sticky top-0 z-50">
+    <header className="bg-gray-50 shadow-md flex items-center justify-between px-6 py-3 sticky top-0 z-50 ">
+        <div className="flex items-center">
+        <Link to="/">
+          <img
+            src="/logo psd copy.png"
+            alt="Notion Logo"
+            className="h-13 w-auto object-contain"
+          />
+        </Link>
+      </div>
       <nav className="hidden md:flex items-center gap-8">
         <Link
           to="/"
           className="text-gray-900 hover:text-teal-500 font-semibold relative group transition-colors"
         >
-          الرئيسية
+          Home
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
         </Link>
         <Link
           to="/clinics"
           className="text-gray-900 hover:text-teal-500 font-semibold relative group transition-colors"
         >
-          العيادات
+          Clincs
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
         </Link>
         <Link
           to="/about"
           className="text-gray-900 hover:text-teal-500 font-semibold relative group transition-colors"
         >
-          من نحن
+          About
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
         </Link>
         <Link
           to="/contact"
           className="text-gray-900 hover:text-teal-500 font-semibold relative group transition-colors"
         >
-          تواصل معنا
+          Contact
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-teal-500 group-hover:w-full transition-all"></span>
         </Link>
       </nav>
@@ -64,40 +73,32 @@ const Header = () => {
             onClick={toggleMenu}
             className="text-gray-900 hover:text-teal-500 font-semibold text-lg"
           >
-            الرئيسية
+            Home
           </Link>
           <Link
             to="/clinics"
             onClick={toggleMenu}
             className="text-gray-900 hover:text-teal-500 font-semibold text-lg"
           >
-            العيادات
+            Clincs
           </Link>
           <Link
             to="/about"
             onClick={toggleMenu}
             className="text-gray-900 hover:text-teal-500 font-semibold text-lg"
           >
-            من نحن
+            About
           </Link>
           <Link
             to="/contact"
             onClick={toggleMenu}
             className="text-gray-900 hover:text-teal-500 font-semibold text-lg"
           >
-            تواصل معنا
+            Contact
           </Link>
         </nav>
       )}
-          <div className="flex items-center">
-        <Link to="/">
-          <img
-            src="/logo psd copy.png"
-            alt="Notion Logo"
-            className="h-12 w-auto object-contain"
-          />
-        </Link>
-      </div>
+
     </header>
   );
 };
