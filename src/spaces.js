@@ -25,6 +25,7 @@ export const spaces = [
     id: 1,
     image: room1,
     totalArea: 60, 
+    
     rooms: [
       {
         name: "Reception",
@@ -162,56 +163,56 @@ export const spaces = [
     locationHint: "Shown on full floor layout as top-right corner unit",
     
   },
-  {
-    id: 4,
-    image: room4,
-  },
-  {
-    id: 5,
-    image: room5,
-  },
-  {
-    id: 6,
-    image: room6,
-  },
-  {
-    id: 7,
-    image: room7,
-  },
-  {
-    id: 8,
-    image: room8,
-  },
-  {
-    id: 9,
-    image: room9,
-  },
-  {
-    id: 10,
-    image: room10,
-  },
-  {
-    id: 11,
-    image: room11,
-  },
-  {
-    id: 12,
-    image: room12,
-  },
-  {
-    id: 13,
-    image: room13,
-  },
-  {
-    id: 14,
-    image: room14,
-  },
-  {
-    id: 15,
-    image: room15,
-  },
-  {
-    id: 16,
-    image: room16,
-  },
+  // {
+  //   id: 4,
+  //   image: room4,
+  // },
+  // {
+  //   id: 5,
+  //   image: room5,
+  // },
+  // {
+  //   id: 6,
+  //   image: room6,
+  // },
+  // {
+  //   id: 7,
+  //   image: room7,
+  // },
+  // {
+  //   id: 8,
+  //   image: room8,
+  // },
+  // {
+  //   id: 9,
+  //   image: room9,
+  // },
+  // {
+  //   id: 10,
+  //   image: room10,
+  // },
+  // {
+  //   id: 11,
+  //   image: room11,
+  // },
+  // {
+  //   id: 12,
+  //   image: room12,
+  // },
+  // {
+  //   id: 13,
+  //   image: room13,
+  // },
+  // {
+  //   id: 14,
+  //   image: room14,
+  // },
+  // {
+  //   id: 15,
+  //   image: room15,
+  // },
+  // {
+  //   id: 16,
+  //   image: room16,
+  // },
 ];
