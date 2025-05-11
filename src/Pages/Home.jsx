@@ -30,7 +30,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/clinics"
-              className="px-8 py-3 bg-white text-blue-900 hover:bg-blue-100 rounded-lg font-bold flex items-center justify-center gap-2 transition duration-300 shadow-lg hover:shadow-xl"
+              className="px-8 py-3 bg-white text-blue-500 hover:bg-blue-100 rounded-lg font-bold flex items-center justify-center gap-2 transition duration-300 shadow-lg hover:shadow-xl"
             >
               <FaClinicMedical /> Our Clinics
             </Link>
@@ -40,7 +40,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaWhatsapp /> 01151133402
+              <FaWhatsapp /> Contact Us
             </a>
           </div>
         </div>

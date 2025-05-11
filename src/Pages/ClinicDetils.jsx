@@ -27,7 +27,7 @@ const ClinicDetailsSimple = () => {
             <img
               src={clinicRoom.image}
               alt={clinicRoom.name}
-              className="max-h-96 w-auto rounded-lg shadow-md object-contain"
+              className="max-h-96 w-auto rounded-lg shadow-md object-cover"
             />
           </div>
 

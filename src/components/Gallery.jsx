@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Gallery = () => {
-  const images = Array.from({ length: 20 }, (_, i) => `/Pics/${i + 1}.jpg`);
+  const images = Array.from({ length: 12 }, (_, i) => `/Pics/${i + 9}.jpg`);
 
   return (
     <div className="py-12 px-4 max-w-7xl mx-auto">
